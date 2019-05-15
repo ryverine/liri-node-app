@@ -2,9 +2,113 @@ require("dotenv").config();
 
 var keys = require("./keys.js");
 
+var fs = require("fs");
+
+var inquirer = require("inquirer");
+
+var Spotify = require('node-spotify-api');
+
+var axios = require("axios");
+
+// http://momentjs.com/docs/
+
+var moment = require('moment');
 
 //You should then be able to access your keys information like so
 var spotify = new Spotify(keys.spotify);
+
+// var action = process.argv[2];
+// var value = process.argv.slice(3).join(" ");
+// console.log("ACTION: " + action);
+// console.log("VALUE: " + value);
+
+initializeLog();
+
+inquirer.prompt([
+{
+    type: "list",
+    message: "What action:",
+    choices: [  "Concert This Band",
+                "Spotify This Song",
+                "OMDB This Movie",
+                "Do What It Says"],
+    name: "action"
+},
+{
+    type: "input",
+    message: "What are you searching for?",
+    name: "value"
+}/*,
+{
+    type: "confirm",
+    message: "Are you sure:",
+    name: "confirm",
+    default: true
+}*/
+]).then(function(inquirerResponse) 
+{
+    //if(inquirerResponse.password === secretWord)
+    console.log("ACTION: " + inquirerResponse.action);
+    console.log("VALUE: " + inquirerResponse.value);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function initializeLog()
+{
+    var data =  "**********" + "\n" +  
+                "** Log File Created" + "\n" + 
+                "** " + moment().format("YYYY-MM-DD hh:mm:ss")  + "\n" + 
+                "**********";
+             
+	// will need to create user object
+	// that hold key data values
+	// will alos need to use moment js for time stamp
+
+	fs.writeFile("log.txt", data, function(error) 
+	{
+		if(error) 
+		{
+			return console.log("Error writing to log file: " + "\n" + error);
+		}
+		// console.log("User data logged.");
+	});
+}
+
+
 
 /*
 //===== concert-this
