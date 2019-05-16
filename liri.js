@@ -26,7 +26,7 @@ var moment = require('moment');
 // https://stackoverflow.com/questions/4482686/check-synchronously-if-file-directory-exists-in-node-js
 if (fs.existsSync("log.txt")) 
 {
-    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Activated" + "\n");
+    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Activated" + "\n";
     updateLog(logData);
 }
 else
@@ -89,7 +89,7 @@ function startLIRI()
 }
 
 
-function continue()
+function continueLIRI()
 {
     inquirer.prompt([
     {
@@ -108,7 +108,7 @@ function continue()
         {
             console.log("LIRI is shutting down...");
 
-            var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Deactivated" + "\n");
+            var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Deactivated" + "\n";
             updateLog(logData);
 
             setTimeout(closeLIRI, 2000);
@@ -148,7 +148,7 @@ function spotifySearch(theSearchValue)
 
     console.log("Search Spotify: " + theSearchValue);
 
-    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching Spotify for the song: " + theSearchValue + "\n");
+    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching Spotify for the song: " + theSearchValue + "\n";
     updateLog(logData);
 
     /*
@@ -168,7 +168,7 @@ function spotifySearch(theSearchValue)
     });
     */
 
-    setTimeout(continue, 3000);
+    setTimeout(continueLIRI, 3000);
 }
 
 
@@ -192,7 +192,7 @@ function omdbSearch(theSearchValue)
 {
     console.log("Search OMDB: " + theSearchValue);
 
-    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching OMDB for: " + theSearchValue + "\n");
+    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching OMDB for: " + theSearchValue + "\n";
     updateLog(logData);
 
     var omdb_api_key = "e3a15507";
@@ -233,7 +233,7 @@ function omdbSearch(theSearchValue)
             console.log("Actors: " + data.Actors);
             console.log("******************************");
 
-            setTimeout(continue, 3000);
+            setTimeout(continueLIRI, 3000);
 
         }).catch(function(error) 
         {
@@ -258,7 +258,7 @@ function omdbSearch(theSearchValue)
     else
     {
         console.log("You did not provide a movie title for me to search for.");
-        setTimeout(continue, 3000);
+        setTimeout(continueLIRI, 3000);
     }
 }
 
@@ -274,7 +274,7 @@ function bitSearch(theSearchValue)
 {
     console.log("Search BandsInTown: " + theSearchValue);
 
-    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching BandsInTown for: " + theSearchValue + "\n");
+    var logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " Searching BandsInTown for: " + theSearchValue + "\n";
     updateLog(logData);
 
     var bandsInTown_api_key = "codingbootcamp";
@@ -348,7 +348,7 @@ function bitSearch(theSearchValue)
 
         console.log("******************************");
 
-        setTimeout(continue, 3000);
+        setTimeout(continueLIRI, 3000);
 
 	}).catch(function(error) 
 	{
@@ -393,26 +393,26 @@ function letLIRIDecide(theSearchValue)
     // read random.txt and split data based on theSearchValue
     if(theSearchValue != "")
     {
-        logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to deciede how to search for:. " + theSearchValue + "\n");
+        logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to deciede how to search for:. " + theSearchValue + "\n";
         updateLog(logData);
 
         var liriChoice = Math.floor(Math.random() * 3) + 1;
 
         if(liriChoice === '1')
         {
-            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search OMDB for: " + theSearchValue + "\n");
+            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search OMDB for: " + theSearchValue + "\n";
             updateLog(logData);
             omdbSearch(theSearchValue);
         }
         else if(liriChoice === '2')
         {
-            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search BandsInTown for: " + theSearchValue + "\n");
+            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search BandsInTown for: " + theSearchValue + "\n";
             updateLog(logData);
             bitSearch(theSearchValue);
         }
         else if(liriChoice === '3')
         {
-            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search Spotify for: " + theSearchValue + "\n");
+            logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search Spotify for: " + theSearchValue + "\n";
             updateLog(logData);
             spotifySearch(theSearchValue);
         }
@@ -424,7 +424,7 @@ function letLIRIDecide(theSearchValue)
     }
     else
     {
-        logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to search for something on her own." + "\n");
+        logData =  "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to search for something on her own." + "\n";
         updateLog(logData);
 
         var randomData = readRandomTxt();
@@ -432,7 +432,7 @@ function letLIRIDecide(theSearchValue)
         // var searchType = "";
     }
 
-    setTimeout(continue, 3000);
+    setTimeout(continueLIRI, 3000);
 }
 
 
