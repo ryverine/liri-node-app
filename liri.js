@@ -131,8 +131,31 @@ function bitSearch(theSearchValue)
         console.log("******************************");
         console.log(theSearchValue.toUpperCase());
         console.log("Upcoming Events: " + data.length);
-        console.log("------------------------------");
+        
+        for (var j = 0; j < data.length; j++)
+        {
+            console.log("------------------------------");
+            
+            var datetime = data[j].datetime.split("T");
+            var date = datetime[0];
+            var time = datetime[1];
 
+            console.log("Date: " + date);
+            console.log("Time: " + time);
+
+            console.log("Location: " + data[j].venue.name + "\n" + 
+                        data[j].venue.city + ", " + data[j].venue.region + "\n" + 
+                        data[j].venue.country);
+
+            console.log("Line Up:");
+            
+            for (var k = 0; k < data[j].lineup.length; k++)
+            {
+                console.log(" * " + data[j].lineup[k]);
+            }
+
+            console.log("More information: " + "\n" + data[j].url);
+        }
 
         console.log("******************************");
 
