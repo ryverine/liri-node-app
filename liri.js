@@ -6,7 +6,7 @@ var fs = require("fs");
 
 var inquirer = require("inquirer");
 
-var Spotify = require('node-spotify-api');
+var spotify = require('node-spotify-api');
 
 var axios = require("axios");
 
@@ -15,7 +15,7 @@ var axios = require("axios");
 var moment = require('moment');
 
 //You should then be able to access your keys information like so
-var spotify = new Spotify(keys.spotify);
+// var spotify = new Spotify(keys.spotify);
 
 // var action = process.argv[2];
 // var value = process.argv.slice(3).join(" ");
@@ -47,20 +47,125 @@ inquirer.prompt([
 }*/
 ]).then(function(inquirerResponse) 
 {
-    //if(inquirerResponse.password === secretWord)
-    console.log("ACTION: " + inquirerResponse.action);
-    console.log("VALUE: " + inquirerResponse.value);
+    
+    //console.log("ACTION: " + inquirerResponse.action);
+    //console.log("VALUE: " + inquirerResponse.value);
 
+    var action = inquirerResponse.action.toLowerCase();
+    var value = inquirerResponse.value.trim();
+
+    switch(action) 
+    {
+        case "concert this band":
+            bitSearch(value);
+            break;
+        case "spotify this song":
+            spotifySearch(value);
+            break;
+        case "omdb this movie":
+            omdbSearch(value);
+            break;
+        case "do what it says":
+            doWhatItSays(value);
+            break;
+        default:
+            console.log("Cannot process " + inquirerResponse.action + '!');
+    }
 });
 
 
+function spotifySearch(theSearchValue)
+{
+    console.log("Search Spotify: " + theSearchValue);
+}
+
+function omdbSearch(theSearchValue)
+{
+    console.log("Search OMDB: " + theSearchValue);
+}
+
+function bitSearch(theSearchValue)
+{
+    console.log("Search BandsInTown: " + theSearchValue);
+
+    var bandsInTown_api_key = "codingbootcamp";
+
+    var input = theSearchValue.toLowerCase();
+
+    var queryText = ""; 
+
+    for (var i = 0; i < input.length; i++)
+    {
+        if(input.charAt(i) === " ")
+        {
+            queryText += "%20";
+        }
+        else if (input.charAt(i) === "/")
+        {
+            queryText += "%252F";
+        }
+        else if (input.charAt(i) === "?")
+        {
+            queryText += "%253F";
+        }
+        else if (input.charAt(i) === "*")
+        {
+            queryText += "%252A";
+        }
+        else if (input.charAt(i) === '"')
+        {
+            queryText += "%27C";
+        }
+        else
+        {
+            queryText += input.charAt(i);
+        }
+    }
+
+    var url = "https://rest.bandsintown.com/artists/" + queryText + "/events?app_id=" + bandsInTown_api_key;
+
+    axios.get(url).then(function(response)
+	{
+        var data = response.data;
+
+        console.log("******************************");
+        console.log(theSearchValue.toUpperCase());
+        console.log("Upcoming Events: " + data.length);
+        console.log("------------------------------");
 
 
+        console.log("******************************");
 
+	}).catch(function(error) 
+	{
+		if (error.response) 
+		{
+			console.log("AXIOS encountered and error: " + "\n" +
+						"Data: " + error.response.data + "\n" +
+						"Status: " + error.response.status + "\n" +
+						"Headers: " + error.response.headers);
+		} 
+		else if (error.request)
+		{
+			// The request was made but no response was received
+			// `error.request` is an object that comes back with details pertaining to the error that occurred.
+			console.log(error.request);
+		} 
+		else
+		{
+			// Something happened in setting up the request that triggered an Error
+			console.log("Error", error.message);
+		}
 
+		// console.log(error.config);
+	});
 
+}
 
-
+function doWhatItSays(theSearchValue)
+{
+    console.log("Search BandsInTown: " + theSearchValue);
+}
 
 
 
