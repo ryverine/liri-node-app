@@ -12,3 +12,46 @@
 ** 2019-05-18 06:36:19 Searching BandsInTown for: ac/dc
 ------------------------------
 ** 2019-05-18 06:36:23 LIRI Bot Deactivated
+** 2019-05-18 06:59:55 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:00:04 Searching BandsInTown for: metallica
+------------------------------
+** 2019-05-18 07:00:43 User would like for LIRI to deciede how to search for:. metallica
+------------------------------
+** 2019-05-18 07:00:43 Searching Spotify for: metallica
+------------------------------
+** 2019-05-18 07:00:43 LIRI decieded to search Spotify for: metallica
+------------------------------
+** 2019-05-18 07:00:56 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:02:44 LIRI Bot Deactivated
+** 2019-05-18 07:13:58 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:14:04 User would like for LIRI to search for something on her own.
+** 2019-05-18 07:15:22 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:15:25 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:17:49 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:17:54 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:22:16 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:22:19 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:23:37 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:23:41 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:27:45 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:27:49 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:30:08 LIRI Bot Activated
+------------------------------
+** 2019-05-18 07:30:11 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 07:30:11 Searching OMDB for: Love Actually
+------------------------------
+** 2019-05-18 07:30:49 LIRI Bot Deactivated

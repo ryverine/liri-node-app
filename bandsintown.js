@@ -93,8 +93,6 @@ var BANDSINTOWN = function()
 
             console.log(divider);
 
-            //setTimeout(continueLIRI, 3000);
-
         }).catch(function(error) 
         {
             logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + "LIRI encountered an error with this BandsInTown request.";
@@ -122,7 +120,6 @@ var BANDSINTOWN = function()
 
 function updateLog(content) 
 {
-    // do not want to use ", " as delimiter
     fs.appendFile("log.txt", content, function(error) 
     {
         if (error)

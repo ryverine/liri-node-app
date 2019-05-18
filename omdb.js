@@ -91,7 +91,6 @@ var OMDB = function()
 
 function updateLog(content) 
 {
-    // do not want to use ", " as delimiter
     fs.appendFile("log.txt", content, function(error) 
     {
         if (error)

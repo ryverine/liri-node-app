@@ -18,7 +18,7 @@ var divider = "------------------------------";
 
 if (fs.existsSync("log.txt")) 
 {
-    var logData =  "\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Activated";
+    var logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI Bot Activated";
     updateLog(logData);
 }
 else
@@ -55,19 +55,13 @@ function startLIRI()
         switch(action) 
         {
             case "concert this band":
-                //bitSearch(value);
-                var bandsintown = new BANDSINTOWN();
-                bandsintown.bitSearch(value);
+                makeAPICall("band",value);
                 break;
             case "spotify this song":
-                //spotifySearch(value);
-                var spotify = new SPOTIFY();
-                spotify.spotifySearch(value);
+                makeAPICall("song",value);
                 break;
             case "omdb this movie":
-                //omdbSearch(value);
-                var omdb = new OMDB();
-                omdb.omdbSearch(value);
+                makeAPICall("movie",value);
                 break;
             case "let liri decide":
                 letLIRIDecide(value);
@@ -116,28 +110,13 @@ function closeLIRI()
 }
 
 
-
-
-
-
-
-
-//===== do-what-it-says
-// node liri.js do-what-it-says
-// Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
-// It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
-// Edit the text in random.txt to test out the feature for movie-this and concert-this.
 function letLIRIDecide(theSearchValue)
 {
-    console.log("Search BandsInTown: " + theSearchValue);
-
     var logData = "";
 
-    // theSearchValue can be song, movie, or concert
-    // read random.txt and split data based on theSearchValue
     if(theSearchValue != "")
     {
-        logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to deciede how to search for:. " + theSearchValue;
+        logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to deciede how to search for: " + theSearchValue;
         updateLog(logData);
 
         var liriChoice = Math.floor(Math.random() * 3) + 1;
@@ -145,56 +124,65 @@ function letLIRIDecide(theSearchValue)
         if(liriChoice === 1)
         {
             logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search OMDB for: " + theSearchValue;
+
             updateLog(logData);
-            omdbSearch(theSearchValue);
+
+            makeAPICall("movie", theSearchValue);
         }
         else if(liriChoice === 2)
         {
             logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search BandsInTown for: " + theSearchValue;
+
             updateLog(logData);
-            bitSearch(theSearchValue);
+
+            makeAPICall("band", theSearchValue);
         }
         else if(liriChoice === 3)
         {
             logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI decieded to search Spotify for: " + theSearchValue;
+
             updateLog(logData);
-            spotifySearch(theSearchValue);
+
+            makeAPICall("song", theSearchValue);
         }
         else
         {
-            // should never get here
-            console.log("LIRI choice not expected: " + liriChoice);
+            console.log("Random number expected to be 1-3. LiriChoice = " + liriChoice);
         }
     }
     else
     {
         logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " User would like for LIRI to search for something on her own.";
+
         updateLog(logData);
 
-        //var randomTxtData = 
         readRandomTxt();
-
-        var liriFavorites = randomTxtData.split("-");
-        // 0 = song
-        // 1 = movie
-        // 2 = band
-
-        //var liriChoice = Math.floor(Math.random() * 3) + 1;
-
-        //console.log("------------------------------");
-        //console.log("Data From random.txt");
-        //for(var i = 0; i < liriFavorites.length; i++)
-        //{
-        //    console.log(liriFavorites[i]);
-        //}
-        
-        // grab something from random at random
-        // var searchType = "";
     }
-
-    setTimeout(continueLIRI, 3000);
 }
 
+
+function makeAPICall(apiChoice, value)
+{
+    if(apiChoice.toLowerCase() === "movie")
+    {
+        var omdb = new OMDB();
+        omdb.omdbSearch(value);
+    }
+    else if(apiChoice.toLowerCase() === "band")
+    {
+        var bandsintown = new BANDSINTOWN();
+        bandsintown.bitSearch(value);
+    }
+    else if(apiChoice.toLowerCase() === "song")
+    {
+        var spotify = new SPOTIFY();
+        spotify.spotifySearch(value);
+    }
+    else
+    {
+        console.log(divider + "\n" + "Unexpected API Choice in makeAPICall()!");
+    }
+}
 
 function readRandomTxt()
 {
@@ -210,13 +198,41 @@ function readRandomTxt()
         else
         {
             var output = data.split("-");
-            for (var i = 0; i < output.length; i++) 
+            var liriChoice = Math.floor(Math.random() * 3);
+            var liriSearch = ""; 
+
+            for(var i = 0; i < output[liriChoice].length; i++)
             {
-                console.log("output["+i+"]: " + output[i]);
+                if(output[liriChoice].charAt(i) != "[" && output[liriChoice].charAt(i) != "]")
+                {
+                    liriSearch += output[liriChoice].charAt(i);
+                }
             }
 
+            if (liriChoice === 0)
+            {
+                logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI searches Spotify for: " + liriSearch;
 
-            //return data;
+                makeAPICall("song", liriSearch);
+            }
+            else if (liriChoice === 1)
+            {
+                logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI searches OMDB for: " + liriSearch;
+
+                makeAPICall("movie", liriSearch);
+            }
+            else if (liriChoice === 2)
+            {
+                logData =  "\r\n" + divider + "\r\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI searches BandsInTown for: " + liriSearch;
+
+                makeAPICall("band", liriSearch);
+            }
+            else
+            {
+                console.log("Random number expected to be 0-2. LiriChoice = " + liriChoice);
+            }
+
+            updateLog(logData);
         }
     });
 }
