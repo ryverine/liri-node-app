@@ -1,92 +1,14 @@
-**********
+******************************
 ** Log File Created
-** 2019-05-15 09:02:54
-**********
-** 2019-05-17 08:36:20 LIRI Bot Activated
-** 2019-05-17 08:36:30 Searching OMDB for: matrix
-** 2019-05-17 08:38:34 LIRI Bot Activated
-** 2019-05-17 08:38:42 Searching OMDB for: the matrix
-** 2019-05-17 08:38:59 Searching BandsInTown for: johnas brothers
-** 2019-05-17 08:39:07 LIRI Bot Deactivated
-
-** 2019-05-17 10:09:11 LIRI Bot Activated
-** 2019-05-17 10:09:26 User would like for LIRI to deciede how to search for:. bob
-** 2019-05-17 10:09:45 User would like for LIRI to search for something on her own.
-** 2019-05-17 10:09:51 LIRI Bot Deactivated
-** 2019-05-17 10:22:11 LIRI Bot Activated
-** 2019-05-17 10:22:15 User would like for LIRI to search for something on her own.
-** 2019-05-17 10:26:12 LIRI Bot Activated
-** 2019-05-17 10:26:16 User would like for LIRI to search for something on her own.
-** 2019-05-17 10:27:23 LIRI Bot Activated
-** 2019-05-17 10:27:27 User would like for LIRI to search for something on her own.
-** 2019-05-17 10:28:22 LIRI Bot Activated
-** 2019-05-17 10:28:34 Searching Spotify for the song: monster mash
-** 2019-05-17 10:28:40 LIRI Bot Deactivated
-** 2019-05-17 10:38:32 LIRI Bot Activated
-** 2019-05-17 10:38:43 Searching Spotify for the song: crazy train
-** 2019-05-17 10:39:04 Searching Spotify for the song: highway to hell
-** 2019-05-17 10:40:33 LIRI Bot Deactivated
-** 2019-05-17 10:40:44 LIRI Bot Activated
-** 2019-05-17 10:40:59 Searching Spotify for the song: night prowler
-** 2019-05-17 10:41:06 LIRI Bot Deactivated
-** 2019-05-17 10:42:47 LIRI Bot Activated
-** 2019-05-17 10:43:13 Searching Spotify for the song: whole lotta love
-** 2019-05-17 10:45:07 LIRI Bot Deactivated
-** 2019-05-17 10:45:15 LIRI Bot Activated
-** 2019-05-17 10:45:26 Searching Spotify for the song: whole lotta love
-** 2019-05-17 10:45:34 LIRI Bot Deactivated
-** 2019-05-17 10:47:55 LIRI Bot Activated
-** 2019-05-17 10:48:01 Searching Spotify for the song: whole lotta love
-** 2019-05-17 10:48:08 LIRI Bot Deactivated
-** 2019-05-17 10:49:00 LIRI Bot Activated
-** 2019-05-17 10:49:06 Searching Spotify for the song: whole lotta love
-** 2019-05-17 10:49:10 LIRI Bot Deactivated
-** 2019-05-17 10:50:25 LIRI Bot Activated
-** 2019-05-17 10:50:28User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-17 10:50:35 LIRI Bot Deactivated
-** 2019-05-17 10:52:42 LIRI Bot Activated
-** 2019-05-17 10:52:46User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-17 10:52:58 LIRI Bot Deactivated
-** 2019-05-17 10:57:03 LIRI Bot Activated
-** 2019-05-17 10:57:07User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-17 10:57:12 LIRI Bot Deactivated
-** 2019-05-17 11:06:57 LIRI Bot Activated
-** 2019-05-17 11:07:01User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-17 11:07:16 LIRI Bot Deactivated
-** 2019-05-17 11:09:31 LIRI Bot Activated
-** 2019-05-17 11:09:34User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-17 11:09:40 LIRI Bot Deactivated
-** 2019-05-18 10:09:44 LIRI Bot Activated
-** 2019-05-18 10:09:48User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
-** 2019-05-18 10:44:03 LIRI Bot Deactivated
-** 2019-05-18 03:52:40 LIRI Bot Activated
-** 2019-05-18 03:52:50
-** 2019-05-18 03:53:34 LIRI Bot Deactivated
-** 2019-05-18 03:53:43 LIRI Bot Activated
-** 2019-05-18 03:53:55
-** 2019-05-18 04:15:38 LIRI Bot Deactivated
-** 2019-05-18 04:15:48 LIRI Bot Activated
-** 2019-05-18 04:15:56
-** 2019-05-18 04:15:57LIRI encountered an error with this Spotify request.
-** 2019-05-18 04:18:41 LIRI Bot Deactivated
-** 2019-05-18 04:18:53 LIRI Bot Activated
-** 2019-05-18 04:19:02
-** 2019-05-18 04:19:31 LIRI Bot Deactivated
-** 2019-05-18 04:22:03 LIRI Bot Activated
-** 2019-05-18 04:22:12
-** 2019-05-18 04:22:22 LIRI Bot Deactivated
-** 2019-05-18 04:30:43 LIRI Bot Activated
-** 2019-05-18 04:30:55 Searching BandsInTown for: taylor swift
-** 2019-05-18 04:31:03 LIRI Bot Deactivated
-** 2019-05-18 04:35:05 LIRI Bot Activated
-** 2019-05-18 04:35:15 Searching BandsInTown for: taylor swift
-** 2019-05-18 04:35:39 LIRI Bot Deactivated
-** 2019-05-18 04:35:55 LIRI Bot Activated
-** 2019-05-18 04:36:03 Searching BandsInTown for: taylor swift
-** 2019-05-18 04:36:09 LIRI Bot Deactivated
-** 2019-05-18 04:37:49 LIRI Bot Activated
-** 2019-05-18 04:37:58
-** 2019-05-18 04:38:04 LIRI Bot Deactivated
-** 2019-05-18 04:40:24 LIRI Bot Activated
-** 2019-05-18 04:40:32 Searching OMDB for: the matrix
-** 2019-05-18 04:40:37 LIRI Bot Deactivated
+** 2019-05-18 06:35:29
+******************************
+------------------------------
+** 2019-05-18 06:35:36 Searching BandsInTown for: taylor swift
+------------------------------
+** 2019-05-18 06:35:50Searching Spotify for: immigrant song
+------------------------------
+** 2019-05-18 06:36:02 Searching OMDB for: the matrix
+------------------------------
+** 2019-05-18 06:36:19 Searching BandsInTown for: ac/dc
+------------------------------
+** 2019-05-18 06:36:23 LIRI Bot Deactivated
