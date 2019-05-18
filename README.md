@@ -4,6 +4,16 @@ Application using Node JS which calls BandsInTown, OMDB, and Spotify APIs.
 
 
 
+## User Log
+
+When you start LIRI for the first time a log file will be created (log.txt).
+
+You searches and interactions with LIRI will be documented in this log file.
+
+I recommend that you use WordPad (or equivalent Rich Text editor) when viewing the log file, becase Plain Text editors (i.e. NotePad) do not seem to render line break characters correctly.
+
+
+
 ## LIRI User Manual
 
 You can use LIRI to search for a musical artist's upcoming concerts, information about a specific movie, and information about a specific song.
