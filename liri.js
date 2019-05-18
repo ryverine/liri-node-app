@@ -181,26 +181,11 @@ function spotifySearch(theSearchValue)
         }
         else
         {
-            // var data = JSON.parse(response);
-            console.log("------------------------------");
-            // console.log(JSON.stringify(data)); 
-            console.log("Num of Items: " + data.tracks.items.length);
-
-            
-
-            var items = data.tracks.items;
-
-            for (var i = 0; i < items.length; i++)
-            {// is artists an array of objects?
-
-                console.log("Num of Artists: " + items[i].album.artists.length);
-            }
-
-
-        // Artist(s)
-        // The song's name
-        // A preview link of the song from Spotify
-        // The album that the song is from
+            var item = data.tracks.items[0];
+            console.log("Song: " + item.name);
+            console.log("Artist: " + item.album.artists[0].name);
+            console.log("Album: " + item.album.name);
+            console.log("Preview: " + item.preview_url);
         }
     });
 
