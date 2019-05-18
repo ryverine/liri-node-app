@@ -22,10 +22,10 @@ When you start LIRI you will be prompted to select a command and then provide se
 
 The available commands are:
 
-	* Concert This Band
-	* Spotify This Song
-	* OMDB This Movie
-	* Let LIRI Decide
+* Concert This Band
+* Spotify This Song
+* OMDB This Movie
+* Let LIRI Decide
 
 
 
@@ -37,14 +37,14 @@ LIRI will search [BandsInTown](https://www.bandsintown.com/) for that specific a
 
 Data returned:
 
-	* Number of upcoming events
-	* Date and Time of the event
-	* Venue name
-	* venue city, state, and country
-	* List of artists performing at the concert
-	* Link to informtion on [BandsInTown](https://www.bandsintown.com/) 
+* Number of upcoming events
+* Date and Time of the event
+* Venue name
+* venue city, state, and country
+* List of artists performing at the concert
+* Link to informtion on [BandsInTown](https://www.bandsintown.com/) 
        
-
+![BandsInTown Search](/documentation/bitSearch.gif)
 
 ### Searching For Songs
 
@@ -52,10 +52,10 @@ Select "Spotify This Song" and enter the title of a song. LIRI will search [Spot
 
 Data returned:
 
-	* A preview link of the song from Spotify
-	* The album that the song is from
+* A preview link of the song from Spotify
+* The album that the song is from
 
-
+![Spotify Search](/documentation/spotifySearch.gif)
 
 ### Searching For Movies
 
@@ -63,15 +63,16 @@ Select "OMDB This Movie" and enter the title of a movie. LIRI will search [OMDB]
 
 Data returned:
 
-	* Year movie was filmed
-	* [IMDB](https://www.imdb.com/) rating
-	* [Rotten Tomatoes](https://www.rottentomatoes.com/) rating
-	* [MetaCritic](https://www.metacritic.com/) rating
-	* Country the movie was filmed in
-	* Language the movie was filmed in
-	* Plot synopsis
-	* Actors staring in the movie
+* Year movie was filmed
+* [IMDB](https://www.imdb.com/) rating
+* [Rotten Tomatoes](https://www.rottentomatoes.com/) rating
+* [MetaCritic](https://www.metacritic.com/) rating
+* Country the movie was filmed in
+* Language the movie was filmed in
+* Plot synopsis
+* Actors staring in the movie
 
+![OMDB Search](/documentation/omdbSearch.gif)
 
 
 ### Letting LIRI Decide What To Search For

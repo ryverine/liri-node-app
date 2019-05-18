@@ -75,3 +75,18 @@
 ** 2019-05-18 04:22:03 LIRI Bot Activated
 ** 2019-05-18 04:22:12
 ** 2019-05-18 04:22:22 LIRI Bot Deactivated
+** 2019-05-18 04:30:43 LIRI Bot Activated
+** 2019-05-18 04:30:55 Searching BandsInTown for: taylor swift
+** 2019-05-18 04:31:03 LIRI Bot Deactivated
+** 2019-05-18 04:35:05 LIRI Bot Activated
+** 2019-05-18 04:35:15 Searching BandsInTown for: taylor swift
+** 2019-05-18 04:35:39 LIRI Bot Deactivated
+** 2019-05-18 04:35:55 LIRI Bot Activated
+** 2019-05-18 04:36:03 Searching BandsInTown for: taylor swift
+** 2019-05-18 04:36:09 LIRI Bot Deactivated
+** 2019-05-18 04:37:49 LIRI Bot Activated
+** 2019-05-18 04:37:58
+** 2019-05-18 04:38:04 LIRI Bot Deactivated
+** 2019-05-18 04:40:24 LIRI Bot Activated
+** 2019-05-18 04:40:32 Searching OMDB for: the matrix
+** 2019-05-18 04:40:37 LIRI Bot Deactivated
