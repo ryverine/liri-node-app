@@ -186,11 +186,14 @@ function spotifySearch(theSearchValue)
             // console.log(JSON.stringify(data)); 
             console.log("Num of Items: " + data.tracks.items.length);
 
+            
+
             var items = data.tracks.items;
 
             for (var i = 0; i < items.length; i++)
-            {
-                console.log("Artist Name: " + items[i].album.artists.name);
+            {// is artists an array of objects?
+
+                console.log("Num of Artists: " + items[i].album.artists.length);
             }
 
 
@@ -474,8 +477,6 @@ function letLIRIDecide(theSearchValue)
 
         //var liriChoice = Math.floor(Math.random() * 3) + 1;
 
-
-
         //console.log("------------------------------");
         //console.log("Data From random.txt");
         //for(var i = 0; i < liriFavorites.length; i++)
@@ -497,6 +498,9 @@ function readRandomTxt()
     {
         if(error) 
         {
+            var logData =  "\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI encounted error reading from random.txt.";
+            updateLog(logData);
+
             return console.log("Error reading file: " + "\n" + error);
         }
         else
@@ -542,6 +546,8 @@ function updateLog(content)
     {
         if (error)
         {
+            var logData =  "\n" + "** " + moment().format("YYYY-MM-DD hh:mm:ss") + " LIRI encounted error writing to random.txt.";
+            updateLog(logData);
             return console.log("Error updating log file: " + "\n" + error);
         }
     });

@@ -56,3 +56,6 @@
 ** 2019-05-17 11:09:31 LIRI Bot Activated
 ** 2019-05-17 11:09:34User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
 ** 2019-05-17 11:09:40 LIRI Bot Deactivated
+** 2019-05-18 10:09:44 LIRI Bot Activated
+** 2019-05-18 10:09:48User did not provide song for LIRI to search Spotify. LIRI searched for 'The Sign' by Ace of Base.
+** 2019-05-18 10:44:03 LIRI Bot Deactivated

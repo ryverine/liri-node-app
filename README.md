@@ -8,7 +8,7 @@ Application using Node JS which calls BandsInTown, OMDB, and Spotify APIs.
 
 When you start LIRI for the first time a log file will be created (log.txt).
 
-You searches and interactions with LIRI will be documented in this log file.
+Your searches and interactions with LIRI will be documented in this log file.
 
 I recommend that you use WordPad (or equivalent Rich Text editor) when viewing the log file, becase Plain Text editors (i.e. NotePad) do not seem to render line break characters correctly.
 
