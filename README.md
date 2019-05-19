@@ -25,7 +25,9 @@ Make sure you have the following files:
 
 ### API Keys
 
-LIRI makes calls to the BandsInTown, Spotify, and OMDB APIs. You must ensure that you have API keys for these services. Take note that the Soptify API needs a `client ID` and `client secret` instead of a single key value.
+LIRI makes calls to the BandsInTown, Spotify, and OMDB APIs. You must ensure that you have API keys for these services. 
+
+Take note that the Soptify API needs a `client ID` and `client secret` instead of a single key value.
 
 ### Environment File
 
@@ -33,7 +35,7 @@ Once you have the neccessary API keys, navigate to the `liri-node-app` directory
 
 On a Windows machine you can make this file by creating a new text file and naming it `.env.`. You will be prompted to confirm the name change and after selecting `yes` you should see that the file is named `.env`.
 
-The contents of the .env file should be as follows:
+The contents of the .env file should be as follows. The content in quotes should be your specific api key values. Do not remove the quote characters! Your values should go between the quotes.
 
 	# Spotify API keys
 	SPOTIFY_ID="your_client_id"
