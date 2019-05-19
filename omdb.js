@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+var keys = require("./keys.js");
+
 var axios = require("axios");
 
 var fs = require("fs");
@@ -19,7 +23,7 @@ var OMDB = function()
 
         updateLog(logData);
 
-        var omdb_api_key = "e3a15507";
+        var omdb_api_key = keys.apikeys.omdb_key;
 
         var input = theSearchValue.toLowerCase().trim();
 

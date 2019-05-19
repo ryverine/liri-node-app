@@ -1,9 +1,9 @@
-require("dotenv").config();
+//require("dotenv").config();
 
 var OMDB = require("./omdb");
 var SPOTIFY = require("./spotify");
 var BANDSINTOWN = require("./bandsintown");
-var keys = require("./keys.js");
+
 //You should then be able to access your keys information like so
 // var spotify = new Spotify(keys.spotify);
 

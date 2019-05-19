@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+var keys = require("./keys.js");
+
 var Spotify = require('node-spotify-api');
 
 var fs = require("fs");
@@ -19,9 +23,9 @@ var SPOTIFY = function()
         
         updateLog(logData);
     
-        var clientID = "5f3d3e3bff894ca09140905e231cd6a9";
-        var clientSecret = "84b4aa0d6817413ba45a338ab8bd75f0";
-    
+        var clientID = keys.apikeys.spotify_id;
+        var clientSecret = keys.apikeys.spotify_secret;
+
         var spotify = new Spotify({
             id: clientID,
             secret: clientSecret

@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+var keys = require("./keys.js");
+
 var axios = require("axios");
 
 var fs = require("fs");
@@ -19,7 +23,7 @@ var BANDSINTOWN = function()
 
         updateLog(logData);
 
-        var bandsInTown_api_key = "codingbootcamp";
+        var bandsInTown_api_key = keys.apikeys.bandsintown_key;
 
         var input = theSearchValue.toLowerCase();
 

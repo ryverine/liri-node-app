@@ -1,19 +1,9 @@
 // console.log('this is loaded');
 
-
-
-exports.spotify = {
-	id: "5f3d3e3bff894ca09140905e231cd6a9",
-	secret: process.env.SPOTIFY_SECRET
-};
-
-
-exports.omdb = {
-	id: "e3a15507"
-};
-
-
-exports.bandsintown = {
-	id: "codingbootcamp"
-};
-
+exports.apikeys = {
+	spotify_id: process.env.SPOTIFY_ID,
+	spotify_secret: process.env.SPOTIFY_SECRET,
+	omdb_key: process.env.OMDB_KEY,
+	bandsintown_key: process.env.BANDSINTOWN_KEY
+  };
+  

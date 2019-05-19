@@ -135,3 +135,51 @@
 ** 2019-05-18 08:24:25 Searching BandsInTown for: Hootie & the Blowfish
 ------------------------------
 ** 2019-05-18 08:24:25 LIRI searches BandsInTown for: Hootie & the Blowfish
+------------------------------
+** 2019-05-18 08:34:33 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:49:27 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:49:35 Searching BandsInTown for: metallica
+------------------------------
+** 2019-05-18 08:49:52 Searching OMDB for: lord of the rings
+------------------------------
+** 2019-05-18 08:49:53LIRI encounted an error with this OMDB request.
+------------------------------
+** 2019-05-18 08:50:24 Searching Spotify for: immigrant song
+------------------------------
+** 2019-05-18 08:53:59 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:54:05 Searching BandsInTown for: metallica
+------------------------------
+** 2019-05-18 08:56:12 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:56:21 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:56:28 Searching BandsInTown for: taylor swift
+------------------------------
+** 2019-05-18 08:56:52 Searching Spotify for: immigrant song
+------------------------------
+** 2019-05-18 09:00:20 LIRI Bot Activated
+------------------------------
+** 2019-05-18 09:00:29 Searching OMDB for: lord of the rings
+------------------------------
+** 2019-05-18 09:00:29LIRI encounted an error with this OMDB request.
+------------------------------
+** 2019-05-18 09:00:37 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 09:01:33 LIRI Bot Activated
+------------------------------
+** 2019-05-18 09:01:43 Searching OMDB for: lord of the rings
+------------------------------
+** 2019-05-18 09:02:20 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 09:02:39 LIRI Bot Activated
+------------------------------
+** 2019-05-18 09:02:53 Searching Spotify for: for whom the bell tolls
+------------------------------
+** 2019-05-18 09:03:50 LIRI Bot Activated
+------------------------------
+** 2019-05-18 09:04:03 Searching BandsInTown for: taylor swift
+------------------------------
+** 2019-05-18 09:04:23 LIRI Bot Deactivated
