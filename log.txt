@@ -55,3 +55,83 @@
 ** 2019-05-18 07:30:11 Searching OMDB for: Love Actually
 ------------------------------
 ** 2019-05-18 07:30:49 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:08:12 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:08:20 User would like for LIRI to deciede how to search for: metallica
+------------------------------
+** 2019-05-18 08:08:20 LIRI decieded to search OMDB for: metallica
+------------------------------
+** 2019-05-18 08:08:20 Searching OMDB for: metallica
+------------------------------
+** 2019-05-18 08:08:20LIRI encounted an error with this OMDB request.
+------------------------------
+** 2019-05-18 08:08:26 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:10:12 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:10:19 Searching OMDB for: metallica
+------------------------------
+** 2019-05-18 08:10:19LIRI encounted an error with this OMDB request.
+------------------------------
+** 2019-05-18 08:10:35 Searching OMDB for: lord of the rings
+------------------------------
+** 2019-05-18 08:19:30 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:19:43 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:19:50 User would like for LIRI to deciede how to search for: midnight
+------------------------------
+** 2019-05-18 08:19:50 LIRI decieded to search OMDB for: midnight
+------------------------------
+** 2019-05-18 08:19:50 Searching OMDB for: midnight
+------------------------------
+** 2019-05-18 08:19:51LIRI encounted an error with this OMDB request.
+------------------------------
+** 2019-05-18 08:20:02 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:20:14 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:20:33 User would like for LIRI to deciede how to search for: heat
+------------------------------
+** 2019-05-18 08:20:33 LIRI decieded to search Spotify for: heat
+------------------------------
+** 2019-05-18 08:20:33 Searching Spotify for: heat
+------------------------------
+** 2019-05-18 08:20:43 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:20:59 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:21:13 Searching OMDB for: heat
+------------------------------
+** 2019-05-18 08:21:40 User would like for LIRI to deciede how to search for: devil wears prada
+------------------------------
+** 2019-05-18 08:21:40 LIRI decieded to search Spotify for: devil wears prada
+------------------------------
+** 2019-05-18 08:21:40 Searching Spotify for: devil wears prada
+------------------------------
+** 2019-05-18 08:21:47 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:21:53 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:22:01 Searching BandsInTown for: devil wears prada
+------------------------------
+** 2019-05-18 08:22:10 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:22:31 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:22:40 User would like for LIRI to deciede how to search for: devil wears prada
+------------------------------
+** 2019-05-18 08:22:40 LIRI decieded to search Spotify for: devil wears prada
+------------------------------
+** 2019-05-18 08:22:40 Searching Spotify for: devil wears prada
+------------------------------
+** 2019-05-18 08:24:03 LIRI Bot Deactivated
+------------------------------
+** 2019-05-18 08:24:21 LIRI Bot Activated
+------------------------------
+** 2019-05-18 08:24:25 User would like for LIRI to search for something on her own.
+------------------------------
+** 2019-05-18 08:24:25 Searching BandsInTown for: Hootie & the Blowfish
+------------------------------
+** 2019-05-18 08:24:25 LIRI searches BandsInTown for: Hootie & the Blowfish

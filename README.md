@@ -83,9 +83,13 @@ Select "Let LIRI Decide" and enter something for LIRI to look up.
 
 LIRI will randomly decide on whether to search BandsInTown, Spotify, or OMDB for the search terms you requested.
 
+![LIRI w/ Data](/documentation/liriSearch_data.gif)
+
 You do not hve to provide LIRI with search terms. 
 
 If you choose to not provide any context, LIRI searches for one of her personal favorites.
+
+![LIRI w/o Data](/documentation/liriSearch_noData.gif)
 
 
 
